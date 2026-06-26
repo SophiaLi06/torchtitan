@@ -31,6 +31,9 @@ from torchtitan.experiments.rl.actors.generator import (
 from torchtitan.experiments.rl.actors.trainer import PolicyTrainer
 from torchtitan.experiments.rl.batch_invariance import BatchInvariantFlexConverter
 from torchtitan.experiments.rl.components.batcher import BatchConfig, Batcher
+from torchtitan.experiments.rl.components.training_sample_builder import (
+    TrainingSampleBuilder,
+)
 from torchtitan.experiments.rl.controller import (
     AsyncLoopConfig,
     Controller,
@@ -290,6 +293,9 @@ def rl_grpo_gpt_oss_debug_varlen() -> Controller.Config:
             batcher=Batcher.Config(
                 batch=BatchConfig(local_batch_size=2, seq_len=2048),
             ),
+            training_sample_builder=TrainingSampleBuilder.Config(
+                drop_zero_std_reward_groups=False,
+            )
         ),
         compile=CompileConfig(enable=True, backend="aot_eager"),
         rollouter=AlphabetSortRollouter.Config(),
@@ -343,6 +349,9 @@ def rl_grpo_gpt_oss_debug_varlen_batch_invariant() -> Controller.Config:
             batcher=Batcher.Config(
                 batch=BatchConfig(local_batch_size=2, seq_len=2048),
             ),
+            training_sample_builder=TrainingSampleBuilder.Config(
+                drop_zero_std_reward_groups=False,
+            )
         ),
         compile=CompileConfig(enable=True, backend="aot_eager"),
         rollouter=AlphabetSortRollouter.Config(),
@@ -514,6 +523,9 @@ def rl_grpo_qwen3_moe_debug_varlen() -> Controller.Config:
             batcher=Batcher.Config(
                 batch=BatchConfig(local_batch_size=2, seq_len=2048),
             ),
+            training_sample_builder=TrainingSampleBuilder.Config(
+                drop_zero_std_reward_groups=False,
+            )
         ),
         # MoE EP all-to-all path issues unpinned D2H copies that block
         # torch.compile and CUDA graph capture; disable both.
@@ -589,6 +601,9 @@ def rl_grpo_qwen3_moe_debug_varlen_batch_invariant() -> Controller.Config:
             batcher=Batcher.Config(
                 batch=BatchConfig(local_batch_size=2, seq_len=2048),
             ),
+            training_sample_builder=TrainingSampleBuilder.Config(
+                drop_zero_std_reward_groups=False,
+            )
         ),
         # MoE EP all-to-all path issues unpinned D2H copies that block
         # torch.compile and CUDA graph capture; disable both.
