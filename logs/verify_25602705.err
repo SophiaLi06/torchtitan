@@ -1,0 +1,68 @@
+[W628 18:56:39.732307593 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W628 18:56:39.735657330 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W628 18:56:39.017705362 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a27102.rc.fas.harvard.edu]:35445 (errno: 97 - Address family not supported by protocol).
+W0628 18:57:42.934000 1890471 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 1890600 closing signal SIGTERM
+W0628 18:57:42.960000 1890471 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 1890601 closing signal SIGTERM
+W0628 18:57:42.960000 1890471 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 1890603 closing signal SIGTERM
+E0628 18:57:42.991000 1890471 site-packages/torch/distributed/elastic/multiprocessing/api.py:988] failed (exitcode: -9) local_rank: 2 (pid: 1890602) of binary: /n/home03/minghaoli/.conda/envs/torchtitan/bin/python3.13
+Traceback (most recent call last):
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+    return f(*args, **kwargs)
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/run.py", line 1016, in main
+    run(args)
+    ~~~^^^^^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/run.py", line 1007, in run
+    elastic_launch(
+    ~~~~~~~~~~~~~~~
+        config=config,
+        ~~~~~~~~~~~~~~
+        entrypoint=cmd,
+        ~~~~~~~~~~~~~~~
+    )(*cmd_args)
+    ~^^^^^^^^^^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/launcher/api.py", line 191, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/launcher/api.py", line 371, in launch_agent
+    raise ChildFailedError(
+    ...<2 lines>...
+    )
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+=========================================================
+torchtitan.train FAILED
+---------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-06-28_18:57:42
+  host      : holygpu8a27102.rc.fas.harvard.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : -15 (pid: 1890600)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 1890600
+[2]:
+  time      : 2026-06-28_18:57:42
+  host      : holygpu8a27102.rc.fas.harvard.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : -15 (pid: 1890601)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 1890601
+[3]:
+  time      : 2026-06-28_18:57:42
+  host      : holygpu8a27102.rc.fas.harvard.edu
+  rank      : 3 (local_rank: 3)
+  exitcode  : -15 (pid: 1890603)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 1890603
+---------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-28_18:57:42
+  host      : holygpu8a27102.rc.fas.harvard.edu
+  rank      : 2 (local_rank: 2)
+  exitcode  : -9 (pid: 1890602)  (SIGKILL)
+  error_file: <N/A>
+  traceback : Signal 9 (SIGKILL) received by PID 1890602
+=========================================================
+[2026-06-28T18:58:04.424] error: Detected 1 oom_kill event in StepId=25602705.batch. Some of the step tasks have been OOM Killed.
