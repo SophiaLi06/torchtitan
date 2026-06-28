@@ -2,11 +2,11 @@
 #SBATCH --job-name=moe_verify
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1       # ONE srun task per node; torchrun spawns the GPU processes
-#SBATCH --gres=gpu:4
-#SBATCH --constraint=nvidia_a100-sxm4-80gb
+#SBATCH --gpus=nvidia_a100-sxm4-80gb:4
 #SBATCH --cpus-per-task=16        # give torchrun enough CPUs to spawn 4 workers
+#SBATCH --mem=64G                 # 4 CUDA processes * ~2 GB CPU RAM each + dataset/tokenizer overhead
 #SBATCH --time=00:15:00
-#SBATCH --partition=gpu_requeue
+#SBATCH --partition=gpu
 #SBATCH --output=logs/verify_%j.out
 #SBATCH --error=logs/verify_%j.err
 
