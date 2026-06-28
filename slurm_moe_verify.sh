@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=moe_verify
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=4
+#SBATCH --ntasks-per-node=1       # ONE srun task per node; torchrun spawns the GPU processes
 #SBATCH --gres=gpu:4
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=16        # give torchrun enough CPUs to spawn 4 workers
 #SBATCH --time=00:15:00
 #SBATCH --partition=gpu_requeue
 #SBATCH --output=logs/verify_%j.out
@@ -15,18 +15,16 @@ module load python
 module load cuda
 conda activate torchtitan
 
-# Force IPv4 -- holygpu nodes resolve to IPv6 by default, which c10d doesn't support
-export MASTER_ADDR=$(getent ahostsv4 "$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)" | awk 'NR==1{print $1}')
-export MASTER_PORT=29500
 export PYTHONPATH=$HOME/torchtitan:$PYTHONPATH
 
 cd $HOME/torchtitan
 
-srun torchrun \
+# Single-node: use localhost so no cross-node networking is needed
+torchrun \
   --nnodes=1 \
   --nproc_per_node=4 \
   --rdzv_backend=c10d \
-  --rdzv_endpoint=$MASTER_ADDR:$MASTER_PORT \
+  --rdzv_endpoint=localhost:29500 \
   -m torchtitan.train \
   --model.name deepseek_v3 \
   --model.config deepseek_v3_debugmodel \
