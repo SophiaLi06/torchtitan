@@ -201,8 +201,16 @@ class Controller(Configurable):
         """Top-level config for RL training."""
 
         model_spec: Annotated[ModelSpec | None, tyro.conf.Suppress] = None
-        """Model specification shared by trainer and generator.
-        Set programmatically via config_registry (not from CLI)."""
+        """Model specification for the trainer, and the generator default when
+        ``generator_model_spec`` is unset. Set programmatically via config_registry
+        (not from CLI)."""
+
+        generator_model_spec: Annotated[ModelSpec | None, tyro.conf.Suppress] = None
+        """Optional generator-only model spec. When set, the generator is built from this
+        while the trainer keeps ``model_spec``, so inference-only dispatcher settings
+        (e.g. DeepEP ``cudagraphable`` + its static expand-buffer capacity) do not leak onto
+        the trainer. Its param structure must match ``model_spec`` so weight sync is
+        unaffected. Set programmatically via config_registry (not from CLI)."""
 
         hf_assets_path: str = "./tests/assets/tokenizer"
         """Path to HF assets folder (model weights, tokenizer, config files)."""
@@ -321,16 +329,18 @@ class Controller(Configurable):
                     "pull reuse KV cached under the old weights."
                 )
 
-            # FULL cudagraph is only correct with the flex attention backend
+            # FULL cudagraph is only correct with the flex attention backend. Validate the
+            # generator's spec, which may differ from the trainer's via generator_model_spec.
             cudagraph = self.generator.cudagraph
+            generator_spec = self.generator_model_spec or self.model_spec
             if (
                 cudagraph.enable
                 and cudagraph.mode == "FULL"
-                and self.model_spec is not None
+                and generator_spec is not None
             ):
                 from torchtitan.models.common.attention import FlexAttention
 
-                inner_attn = self.model_spec.model.layers[0].attention.inner_attention
+                inner_attn = generator_spec.model.layers[0].attention.inner_attention
                 if not isinstance(inner_attn, FlexAttention.Config):
                     raise ValueError(
                         "cudagraph mode 'FULL' is only supported with the flex "
@@ -545,7 +555,7 @@ class Controller(Configurable):
                     actor_name,
                     VLLMGenerator,
                     config.generator,
-                    model_spec=config.model_spec,
+                    model_spec=config.generator_model_spec or config.model_spec,
                     model_path=config.hf_assets_path,
                     compile_config=config.compile,
                     max_num_seqs=max_num_seqs,
