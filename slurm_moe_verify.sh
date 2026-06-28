@@ -5,7 +5,7 @@
 #SBATCH --gres=gpu:4
 #SBATCH --cpus-per-task=4
 #SBATCH --time=00:15:00
-#SBATCH --partition=gpt_requeue
+#SBATCH --partition=gpu_requeue
 #SBATCH --output=logs/verify_%j.out
 #SBATCH --error=logs/verify_%j.err
 
