@@ -3,6 +3,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1       # ONE srun task per node; torchrun spawns the GPU processes
 #SBATCH --gres=gpu:4
+#SBATCH --constraint=nvidia_a100-sxm4-80gb
 #SBATCH --cpus-per-task=16        # give torchrun enough CPUs to spawn 4 workers
 #SBATCH --time=00:15:00
 #SBATCH --partition=gpu_requeue
