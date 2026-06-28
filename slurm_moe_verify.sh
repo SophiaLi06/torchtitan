@@ -15,7 +15,8 @@ module load python
 module load cuda
 conda activate torchtitan
 
-export MASTER_ADDR=$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)
+# Force IPv4 -- holygpu nodes resolve to IPv6 by default, which c10d doesn't support
+export MASTER_ADDR=$(getent ahostsv4 "$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)" | awk 'NR==1{print $1}')
 export MASTER_PORT=29500
 export PYTHONPATH=$HOME/torchtitan:$PYTHONPATH
 
