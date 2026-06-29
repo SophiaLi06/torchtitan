@@ -1,0 +1,433 @@
+[W628 23:03:54.096640250 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W628 23:03:54.104512724 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W628 23:03:54.439945477 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a31104.rc.fas.harvard.edu]:33897 (errno: 97 - Address family not supported by protocol).
+[W628 23:05:22.147752321 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a31104.rc.fas.harvard.edu]:33897 (errno: 97 - Address family not supported by protocol).
+[W628 23:05:22.150275886 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a31104.rc.fas.harvard.edu]:33897 (errno: 97 - Address family not supported by protocol).
+[W628 23:05:22.153701126 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a31104.rc.fas.harvard.edu]:33897 (errno: 97 - Address family not supported by protocol).
+[W628 23:05:22.155057794 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a31104.rc.fas.harvard.edu]:33897 (errno: 97 - Address family not supported by protocol).
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 2000 examples [00:00, 17531.05 examples/s]Generating train split: 2000 examples [00:00, 11627.88 examples/s]
+/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torchdata/stateful_dataloader/stateful_dataloader.py:379: UserWarning: 'set_vital' is deprecated, please do not call
+  torch.set_vital("Dataloader", "enabled", "True")  # type: ignore[attr-defined]
+/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torchdata/stateful_dataloader/stateful_dataloader.py:379: UserWarning: 'set_vital' is deprecated, please do not call
+  torch.set_vital("Dataloader", "enabled", "True")  # type: ignore[attr-defined]
+/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torchdata/stateful_dataloader/stateful_dataloader.py:379: UserWarning: 'set_vital' is deprecated, please do not call
+  torch.set_vital("Dataloader", "enabled", "True")  # type: ignore[attr-defined]
+/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torchdata/stateful_dataloader/stateful_dataloader.py:379: UserWarning: 'set_vital' is deprecated, please do not call
+  torch.set_vital("Dataloader", "enabled", "True")  # type: ignore[attr-defined]
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "<frozen runpy>", line 203, in _run_module_as_main
+[rank3]:   File "<frozen runpy>", line 88, in _run_code
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+[rank3]:     main()
+[rank3]:     ~~~~^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 65, in main
+[rank3]:     trainer.train()
+[rank3]:     ~~~~~~~~~~~~~^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+[rank3]:     return f(*args, **kwargs)
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+[rank3]:     self.train_step(data_iterator)
+[rank3]:     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+[rank3]:     loss = self.forward_backward_step(
+[rank3]:         input_dict=input_dict,
+[rank3]:         labels=labels,
+[rank3]:         global_valid_tokens=global_valid_tokens,
+[rank3]:     )
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank3]:     return func(*args, **kwargs)
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 707, in forward_backward_step
+[rank3]:     inputs, labels, extra_kwargs = self.post_dataloading_process(input_dict, labels)
+[rank3]:                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank3]:     return func(*args, **kwargs)
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 664, in post_dataloading_process
+[rank3]:     extra_kwargs["attention_masks"] = model.get_attention_masks(
+[rank3]:                                       ~~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank3]:         positions=positions,
+[rank3]:         ^^^^^^^^^^^^^^^^^^^^
+[rank3]:     )
+[rank3]:     ^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 325, in get_attention_masks
+[rank3]:     return self._create_flex_attention_mask_for_document(positions, attn_config)
+[rank3]:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 298, in _create_flex_attention_mask_for_document
+[rank3]:     return create_attention_mask(
+[rank3]:         and_masks(*mask_mods),
+[rank3]:     ...<11 lines>...
+[rank3]:         separate_full_blocks=not is_in_batch_invariant_mode(),
+[rank3]:     )
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/attention.py", line 584, in create_attention_mask
+[rank3]:     return _compiled_create_block_mask(*args, **kwargs)
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/_dynamo/eval_frame.py", line 1047, in compile_wrapper
+[rank3]:     result = fn(*args, **kwargs)
+[rank3]: TypeError: create_block_mask() got an unexpected keyword argument 'separate_full_blocks'
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "<frozen runpy>", line 203, in _run_module_as_main
+[rank2]:   File "<frozen runpy>", line 88, in _run_code
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+[rank2]:     main()
+[rank2]:     ~~~~^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 65, in main
+[rank2]:     trainer.train()
+[rank2]:     ~~~~~~~~~~~~~^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+[rank2]:     return f(*args, **kwargs)
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+[rank2]:     self.train_step(data_iterator)
+[rank2]:     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+[rank2]:     loss = self.forward_backward_step(
+[rank2]:         input_dict=input_dict,
+[rank2]:         labels=labels,
+[rank2]:         global_valid_tokens=global_valid_tokens,
+[rank2]:     )
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank2]:     return func(*args, **kwargs)
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 707, in forward_backward_step
+[rank2]:     inputs, labels, extra_kwargs = self.post_dataloading_process(input_dict, labels)
+[rank2]:                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank2]:     return func(*args, **kwargs)
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 664, in post_dataloading_process
+[rank2]:     extra_kwargs["attention_masks"] = model.get_attention_masks(
+[rank2]:                                       ~~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank2]:         positions=positions,
+[rank2]:         ^^^^^^^^^^^^^^^^^^^^
+[rank2]:     )
+[rank2]:     ^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 325, in get_attention_masks
+[rank2]:     return self._create_flex_attention_mask_for_document(positions, attn_config)
+[rank2]:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 298, in _create_flex_attention_mask_for_document
+[rank2]:     return create_attention_mask(
+[rank2]:         and_masks(*mask_mods),
+[rank2]:     ...<11 lines>...
+[rank2]:         separate_full_blocks=not is_in_batch_invariant_mode(),
+[rank2]:     )
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/attention.py", line 584, in create_attention_mask
+[rank2]:     return _compiled_create_block_mask(*args, **kwargs)
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/_dynamo/eval_frame.py", line 1047, in compile_wrapper
+[rank2]:     result = fn(*args, **kwargs)
+[rank2]: TypeError: create_block_mask() got an unexpected keyword argument 'separate_full_blocks'
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 203, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+[rank1]:     main()
+[rank1]:     ~~~~^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 65, in main
+[rank1]:     trainer.train()
+[rank1]:     ~~~~~~~~~~~~~^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+[rank1]:     return f(*args, **kwargs)
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+[rank1]:     self.train_step(data_iterator)
+[rank1]:     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+[rank1]:     loss = self.forward_backward_step(
+[rank1]:         input_dict=input_dict,
+[rank1]:         labels=labels,
+[rank1]:         global_valid_tokens=global_valid_tokens,
+[rank1]:     )
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank1]:     return func(*args, **kwargs)
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 707, in forward_backward_step
+[rank1]:     inputs, labels, extra_kwargs = self.post_dataloading_process(input_dict, labels)
+[rank1]:                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank1]:     return func(*args, **kwargs)
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 664, in post_dataloading_process
+[rank1]:     extra_kwargs["attention_masks"] = model.get_attention_masks(
+[rank1]:                                       ~~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank1]:         positions=positions,
+[rank1]:         ^^^^^^^^^^^^^^^^^^^^
+[rank1]:     )
+[rank1]:     ^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 325, in get_attention_masks
+[rank1]:     return self._create_flex_attention_mask_for_document(positions, attn_config)
+[rank1]:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 298, in _create_flex_attention_mask_for_document
+[rank1]:     return create_attention_mask(
+[rank1]:         and_masks(*mask_mods),
+[rank1]:     ...<11 lines>...
+[rank1]:         separate_full_blocks=not is_in_batch_invariant_mode(),
+[rank1]:     )
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/attention.py", line 584, in create_attention_mask
+[rank1]:     return _compiled_create_block_mask(*args, **kwargs)
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/_dynamo/eval_frame.py", line 1047, in compile_wrapper
+[rank1]:     result = fn(*args, **kwargs)
+[rank1]: TypeError: create_block_mask() got an unexpected keyword argument 'separate_full_blocks'
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 203, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+[rank0]:     main()
+[rank0]:     ~~~~^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 65, in main
+[rank0]:     trainer.train()
+[rank0]:     ~~~~~~~~~~~~~^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+[rank0]:     return f(*args, **kwargs)
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+[rank0]:     self.train_step(data_iterator)
+[rank0]:     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+[rank0]:     loss = self.forward_backward_step(
+[rank0]:         input_dict=input_dict,
+[rank0]:         labels=labels,
+[rank0]:         global_valid_tokens=global_valid_tokens,
+[rank0]:     )
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 707, in forward_backward_step
+[rank0]:     inputs, labels, extra_kwargs = self.post_dataloading_process(input_dict, labels)
+[rank0]:                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 664, in post_dataloading_process
+[rank0]:     extra_kwargs["attention_masks"] = model.get_attention_masks(
+[rank0]:                                       ~~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank0]:         positions=positions,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^
+[rank0]:     )
+[rank0]:     ^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 325, in get_attention_masks
+[rank0]:     return self._create_flex_attention_mask_for_document(positions, attn_config)
+[rank0]:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 298, in _create_flex_attention_mask_for_document
+[rank0]:     return create_attention_mask(
+[rank0]:         and_masks(*mask_mods),
+[rank0]:     ...<11 lines>...
+[rank0]:         separate_full_blocks=not is_in_batch_invariant_mode(),
+[rank0]:     )
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/attention.py", line 584, in create_attention_mask
+[rank0]:     return _compiled_create_block_mask(*args, **kwargs)
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/_dynamo/eval_frame.py", line 1047, in compile_wrapper
+[rank0]:     result = fn(*args, **kwargs)
+[rank0]: TypeError: create_block_mask() got an unexpected keyword argument 'separate_full_blocks'
+W0628 23:05:50.879000 537658 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 537691 closing signal SIGTERM
+W0628 23:05:50.884000 537658 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 537692 closing signal SIGTERM
+W0628 23:05:50.884000 537658 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 537693 closing signal SIGTERM
+E0628 23:05:51.328000 537658 site-packages/torch/distributed/elastic/multiprocessing/api.py:988] failed (exitcode: 1) local_rank: 0 (pid: 537690) of binary: /n/home03/minghaoli/.conda/envs/torchtitan/bin/python3.13
+E0628 23:05:51.376000 537658 site-packages/torch/distributed/elastic/multiprocessing/errors/error_handler.py:145] no error file defined for parent, to copy child error file (/tmp/torchelastic_xoe6jwwa/none_d8wfbsa7/attempt_0/0/error.json)
+Traceback (most recent call last):
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+    return f(*args, **kwargs)
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/run.py", line 1016, in main
+    run(args)
+    ~~~^^^^^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/run.py", line 1007, in run
+    elastic_launch(
+    ~~~~~~~~~~~~~~~
+        config=config,
+        ~~~~~~~~~~~~~~
+        entrypoint=cmd,
+        ~~~~~~~~~~~~~~~
+    )(*cmd_args)
+    ~^^^^^^^^^^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/launcher/api.py", line 191, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/launcher/api.py", line 371, in launch_agent
+    raise ChildFailedError(
+    ...<2 lines>...
+    )
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+torchtitan.train FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-06-28_23:05:33
+  host      : holygpu8a31104.rc.fas.harvard.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 537691) 
+  error_file: /tmp/torchelastic_xoe6jwwa/none_d8wfbsa7/attempt_0/1/error.json
+  traceback : Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+      return f(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+      self.train_step(data_iterator)
+      ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+      loss = self.forward_backward_step(
+          input_dict=input_dict,
+          labels=labels,
+          global_valid_tokens=global_valid_tokens,
+      )
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 707, in forward_backward_step
+      inputs, labels, extra_kwargs = self.post_dataloading_process(input_dict, labels)
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 664, in post_dataloading_process
+      extra_kwargs["attention_masks"] = model.get_attention_masks(
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~^
+          positions=positions,
+          ^^^^^^^^^^^^^^^^^^^^
+      )
+      ^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 325, in get_attention_masks
+      return self._create_flex_attention_mask_for_document(positions, attn_config)
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 298, in _create_flex_attention_mask_for_document
+      return create_attention_mask(
+          and_masks(*mask_mods),
+      ...<11 lines>...
+          separate_full_blocks=not is_in_batch_invariant_mode(),
+      )
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/attention.py", line 584, in create_attention_mask
+      return _compiled_create_block_mask(*args, **kwargs)
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/_dynamo/eval_frame.py", line 1047, in compile_wrapper
+      result = fn(*args, **kwargs)
+  TypeError: create_block_mask() got an unexpected keyword argument 'separate_full_blocks'
+  
+[2]:
+  time      : 2026-06-28_23:05:33
+  host      : holygpu8a31104.rc.fas.harvard.edu
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 537692) 
+  error_file: /tmp/torchelastic_xoe6jwwa/none_d8wfbsa7/attempt_0/2/error.json
+  traceback : Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+      return f(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+      self.train_step(data_iterator)
+      ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+      loss = self.forward_backward_step(
+          input_dict=input_dict,
+          labels=labels,
+          global_valid_tokens=global_valid_tokens,
+      )
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 707, in forward_backward_step
+      inputs, labels, extra_kwargs = self.post_dataloading_process(input_dict, labels)
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 664, in post_dataloading_process
+      extra_kwargs["attention_masks"] = model.get_attention_masks(
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~^
+          positions=positions,
+          ^^^^^^^^^^^^^^^^^^^^
+      )
+      ^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 325, in get_attention_masks
+      return self._create_flex_attention_mask_for_document(positions, attn_config)
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 298, in _create_flex_attention_mask_for_document
+      return create_attention_mask(
+          and_masks(*mask_mods),
+      ...<11 lines>...
+          separate_full_blocks=not is_in_batch_invariant_mode(),
+      )
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/attention.py", line 584, in create_attention_mask
+      return _compiled_create_block_mask(*args, **kwargs)
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/_dynamo/eval_frame.py", line 1047, in compile_wrapper
+      result = fn(*args, **kwargs)
+  TypeError: create_block_mask() got an unexpected keyword argument 'separate_full_blocks'
+  
+[3]:
+  time      : 2026-06-28_23:05:33
+  host      : holygpu8a31104.rc.fas.harvard.edu
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 537693) 
+  error_file: /tmp/torchelastic_xoe6jwwa/none_d8wfbsa7/attempt_0/3/error.json
+  traceback : Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+      return f(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+      self.train_step(data_iterator)
+      ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+      loss = self.forward_backward_step(
+          input_dict=input_dict,
+          labels=labels,
+          global_valid_tokens=global_valid_tokens,
+      )
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 707, in forward_backward_step
+      inputs, labels, extra_kwargs = self.post_dataloading_process(input_dict, labels)
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 664, in post_dataloading_process
+      extra_kwargs["attention_masks"] = model.get_attention_masks(
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~^
+          positions=positions,
+          ^^^^^^^^^^^^^^^^^^^^
+      )
+      ^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 325, in get_attention_masks
+      return self._create_flex_attention_mask_for_document(positions, attn_config)
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 298, in _create_flex_attention_mask_for_document
+      return create_attention_mask(
+          and_masks(*mask_mods),
+      ...<11 lines>...
+          separate_full_blocks=not is_in_batch_invariant_mode(),
+      )
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/attention.py", line 584, in create_attention_mask
+      return _compiled_create_block_mask(*args, **kwargs)
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/_dynamo/eval_frame.py", line 1047, in compile_wrapper
+      result = fn(*args, **kwargs)
+  TypeError: create_block_mask() got an unexpected keyword argument 'separate_full_blocks'
+  
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-28_23:05:33
+  host      : holygpu8a31104.rc.fas.harvard.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 537690) 
+  error_file: /tmp/torchelastic_xoe6jwwa/none_d8wfbsa7/attempt_0/0/error.json
+  traceback : Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+      return f(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+      self.train_step(data_iterator)
+      ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+      loss = self.forward_backward_step(
+          input_dict=input_dict,
+          labels=labels,
+          global_valid_tokens=global_valid_tokens,
+      )
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 707, in forward_backward_step
+      inputs, labels, extra_kwargs = self.post_dataloading_process(input_dict, labels)
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 664, in post_dataloading_process
+      extra_kwargs["attention_masks"] = model.get_attention_masks(
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~^
+          positions=positions,
+          ^^^^^^^^^^^^^^^^^^^^
+      )
+      ^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 325, in get_attention_masks
+      return self._create_flex_attention_mask_for_document(positions, attn_config)
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 298, in _create_flex_attention_mask_for_document
+      return create_attention_mask(
+          and_masks(*mask_mods),
+      ...<11 lines>...
+          separate_full_blocks=not is_in_batch_invariant_mode(),
+      )
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/attention.py", line 584, in create_attention_mask
+      return _compiled_create_block_mask(*args, **kwargs)
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/_dynamo/eval_frame.py", line 1047, in compile_wrapper
+      result = fn(*args, **kwargs)
+  TypeError: create_block_mask() got an unexpected keyword argument 'separate_full_blocks'
+  
+============================================================
