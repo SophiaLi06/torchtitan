@@ -1,0 +1,313 @@
+[W628 21:57:51.285782912 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W628 21:57:51.290211703 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W628 21:57:51.594750670 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a31305.rc.fas.harvard.edu]:35813 (errno: 97 - Address family not supported by protocol).
+[W628 21:59:02.352256773 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a31305.rc.fas.harvard.edu]:35813 (errno: 97 - Address family not supported by protocol).
+[W628 21:59:02.354328764 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a31305.rc.fas.harvard.edu]:35813 (errno: 97 - Address family not supported by protocol).
+[W628 21:59:02.358813720 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a31305.rc.fas.harvard.edu]:35813 (errno: 97 - Address family not supported by protocol).
+[W628 21:59:02.361144583 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a31305.rc.fas.harvard.edu]:35813 (errno: 97 - Address family not supported by protocol).
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 203, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+[rank0]:     main()
+[rank0]:     ~~~~^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 51, in main
+[rank0]:     trainer = config.build()  # pyrefly: ignore [missing-attribute]
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/config/configurable.py", line 151, in build
+[rank0]:     return self._owner(config=replace(self))
+[rank0]:            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+[rank0]:     return f(*args, **kwargs)
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 239, in __init__
+[rank0]:     self.parallel_dims = parallel_dims = self.init_distributed()
+[rank0]:                                          ~~~~~~~~~~~~~~~~~~~~~^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 581, in init_distributed
+[rank0]:     return ParallelDims.from_config(config.parallelism, world_size)
+[rank0]:            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 151, in from_config
+[rank0]:     return cls(
+[rank0]:         dp_replicate=parallelism_config.data_parallel_replicate_degree,
+[rank0]:     ...<6 lines>...
+[rank0]:         spmd_backend=parallelism_config.spmd_backend,
+[rank0]:     )
+[rank0]:   File "<string>", line 15, in __init__
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 163, in __post_init__
+[rank0]:     self._validate()
+[rank0]:     ~~~~~~~~~~~~~~^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 181, in _validate
+[rank0]:     assert dp_replicate * dp_shard * cp * tp * pp == self.world_size, (
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: AssertionError: Invalid parallel dims: dp_replicate(1) * dp_shard(1) * cp(1) * tp(2) * pp(1) != WORLD_SIZE(4)
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 203, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+[rank1]:     main()
+[rank1]:     ~~~~^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 51, in main
+[rank1]:     trainer = config.build()  # pyrefly: ignore [missing-attribute]
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/config/configurable.py", line 151, in build
+[rank1]:     return self._owner(config=replace(self))
+[rank1]:            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+[rank1]:     return f(*args, **kwargs)
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 239, in __init__
+[rank1]:     self.parallel_dims = parallel_dims = self.init_distributed()
+[rank1]:                                          ~~~~~~~~~~~~~~~~~~~~~^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank1]:     return func(*args, **kwargs)
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 581, in init_distributed
+[rank1]:     return ParallelDims.from_config(config.parallelism, world_size)
+[rank1]:            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 151, in from_config
+[rank1]:     return cls(
+[rank1]:         dp_replicate=parallelism_config.data_parallel_replicate_degree,
+[rank1]:     ...<6 lines>...
+[rank1]:         spmd_backend=parallelism_config.spmd_backend,
+[rank1]:     )
+[rank1]:   File "<string>", line 15, in __init__
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 163, in __post_init__
+[rank1]:     self._validate()
+[rank1]:     ~~~~~~~~~~~~~~^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 181, in _validate
+[rank1]:     assert dp_replicate * dp_shard * cp * tp * pp == self.world_size, (
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: AssertionError: Invalid parallel dims: dp_replicate(1) * dp_shard(1) * cp(1) * tp(2) * pp(1) != WORLD_SIZE(4)
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "<frozen runpy>", line 203, in _run_module_as_main
+[rank3]:   File "<frozen runpy>", line 88, in _run_code
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+[rank3]:     main()
+[rank3]:     ~~~~^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 51, in main
+[rank3]:     trainer = config.build()  # pyrefly: ignore [missing-attribute]
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/config/configurable.py", line 151, in build
+[rank3]:     return self._owner(config=replace(self))
+[rank3]:            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+[rank3]:     return f(*args, **kwargs)
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 239, in __init__
+[rank3]:     self.parallel_dims = parallel_dims = self.init_distributed()
+[rank3]:                                          ~~~~~~~~~~~~~~~~~~~~~^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank3]:     return func(*args, **kwargs)
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 581, in init_distributed
+[rank3]:     return ParallelDims.from_config(config.parallelism, world_size)
+[rank3]:            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 151, in from_config
+[rank3]:     return cls(
+[rank3]:         dp_replicate=parallelism_config.data_parallel_replicate_degree,
+[rank3]:     ...<6 lines>...
+[rank3]:         spmd_backend=parallelism_config.spmd_backend,
+[rank3]:     )
+[rank3]:   File "<string>", line 15, in __init__
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 163, in __post_init__
+[rank3]:     self._validate()
+[rank3]:     ~~~~~~~~~~~~~~^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 181, in _validate
+[rank3]:     assert dp_replicate * dp_shard * cp * tp * pp == self.world_size, (
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]: AssertionError: Invalid parallel dims: dp_replicate(1) * dp_shard(1) * cp(1) * tp(2) * pp(1) != WORLD_SIZE(4)
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "<frozen runpy>", line 203, in _run_module_as_main
+[rank2]:   File "<frozen runpy>", line 88, in _run_code
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+[rank2]:     main()
+[rank2]:     ~~~~^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 51, in main
+[rank2]:     trainer = config.build()  # pyrefly: ignore [missing-attribute]
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/config/configurable.py", line 151, in build
+[rank2]:     return self._owner(config=replace(self))
+[rank2]:            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+[rank2]:     return f(*args, **kwargs)
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 239, in __init__
+[rank2]:     self.parallel_dims = parallel_dims = self.init_distributed()
+[rank2]:                                          ~~~~~~~~~~~~~~~~~~~~~^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank2]:     return func(*args, **kwargs)
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 581, in init_distributed
+[rank2]:     return ParallelDims.from_config(config.parallelism, world_size)
+[rank2]:            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 151, in from_config
+[rank2]:     return cls(
+[rank2]:         dp_replicate=parallelism_config.data_parallel_replicate_degree,
+[rank2]:     ...<6 lines>...
+[rank2]:         spmd_backend=parallelism_config.spmd_backend,
+[rank2]:     )
+[rank2]:   File "<string>", line 15, in __init__
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 163, in __post_init__
+[rank2]:     self._validate()
+[rank2]:     ~~~~~~~~~~~~~~^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 181, in _validate
+[rank2]:     assert dp_replicate * dp_shard * cp * tp * pp == self.world_size, (
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]: AssertionError: Invalid parallel dims: dp_replicate(1) * dp_shard(1) * cp(1) * tp(2) * pp(1) != WORLD_SIZE(4)
+[rank0]:[W628 21:59:02.801325701 ProcessGroupNCCL.cpp:1647] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+W0628 21:59:18.233000 576415 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 576444 closing signal SIGTERM
+W0628 21:59:18.236000 576415 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 576445 closing signal SIGTERM
+W0628 21:59:18.236000 576415 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 576446 closing signal SIGTERM
+E0628 21:59:18.463000 576415 site-packages/torch/distributed/elastic/multiprocessing/api.py:988] failed (exitcode: 1) local_rank: 3 (pid: 576447) of binary: /n/home03/minghaoli/.conda/envs/torchtitan/bin/python3.13
+E0628 21:59:18.488000 576415 site-packages/torch/distributed/elastic/multiprocessing/errors/error_handler.py:145] no error file defined for parent, to copy child error file (/tmp/torchelastic_2fx09b1k/none_9rl2oeng/attempt_0/3/error.json)
+Traceback (most recent call last):
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+    return f(*args, **kwargs)
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/run.py", line 1016, in main
+    run(args)
+    ~~~^^^^^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/run.py", line 1007, in run
+    elastic_launch(
+    ~~~~~~~~~~~~~~~
+        config=config,
+        ~~~~~~~~~~~~~~
+        entrypoint=cmd,
+        ~~~~~~~~~~~~~~~
+    )(*cmd_args)
+    ~^^^^^^^^^^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/launcher/api.py", line 191, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/launcher/api.py", line 371, in launch_agent
+    raise ChildFailedError(
+    ...<2 lines>...
+    )
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+torchtitan.train FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-06-28_21:59:02
+  host      : holygpu8a31305.rc.fas.harvard.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 576444) 
+  error_file: /tmp/torchelastic_2fx09b1k/none_9rl2oeng/attempt_0/0/error.json
+  traceback : Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+      return f(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 239, in __init__
+      self.parallel_dims = parallel_dims = self.init_distributed()
+                                           ~~~~~~~~~~~~~~~~~~~~~^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 581, in init_distributed
+      return ParallelDims.from_config(config.parallelism, world_size)
+             ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 151, in from_config
+      return cls(
+          dp_replicate=parallelism_config.data_parallel_replicate_degree,
+      ...<6 lines>...
+          spmd_backend=parallelism_config.spmd_backend,
+      )
+    File "<string>", line 15, in __init__
+    File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 163, in __post_init__
+      self._validate()
+      ~~~~~~~~~~~~~~^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 181, in _validate
+      assert dp_replicate * dp_shard * cp * tp * pp == self.world_size, (
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  AssertionError: Invalid parallel dims: dp_replicate(1) * dp_shard(1) * cp(1) * tp(2) * pp(1) != WORLD_SIZE(4)
+  
+[2]:
+  time      : 2026-06-28_21:59:02
+  host      : holygpu8a31305.rc.fas.harvard.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 576445) 
+  error_file: /tmp/torchelastic_2fx09b1k/none_9rl2oeng/attempt_0/1/error.json
+  traceback : Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+      return f(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 239, in __init__
+      self.parallel_dims = parallel_dims = self.init_distributed()
+                                           ~~~~~~~~~~~~~~~~~~~~~^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 581, in init_distributed
+      return ParallelDims.from_config(config.parallelism, world_size)
+             ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 151, in from_config
+      return cls(
+          dp_replicate=parallelism_config.data_parallel_replicate_degree,
+      ...<6 lines>...
+          spmd_backend=parallelism_config.spmd_backend,
+      )
+    File "<string>", line 15, in __init__
+    File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 163, in __post_init__
+      self._validate()
+      ~~~~~~~~~~~~~~^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 181, in _validate
+      assert dp_replicate * dp_shard * cp * tp * pp == self.world_size, (
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  AssertionError: Invalid parallel dims: dp_replicate(1) * dp_shard(1) * cp(1) * tp(2) * pp(1) != WORLD_SIZE(4)
+  
+[3]:
+  time      : 2026-06-28_21:59:02
+  host      : holygpu8a31305.rc.fas.harvard.edu
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 576446) 
+  error_file: /tmp/torchelastic_2fx09b1k/none_9rl2oeng/attempt_0/2/error.json
+  traceback : Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+      return f(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 239, in __init__
+      self.parallel_dims = parallel_dims = self.init_distributed()
+                                           ~~~~~~~~~~~~~~~~~~~~~^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 581, in init_distributed
+      return ParallelDims.from_config(config.parallelism, world_size)
+             ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 151, in from_config
+      return cls(
+          dp_replicate=parallelism_config.data_parallel_replicate_degree,
+      ...<6 lines>...
+          spmd_backend=parallelism_config.spmd_backend,
+      )
+    File "<string>", line 15, in __init__
+    File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 163, in __post_init__
+      self._validate()
+      ~~~~~~~~~~~~~~^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 181, in _validate
+      assert dp_replicate * dp_shard * cp * tp * pp == self.world_size, (
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  AssertionError: Invalid parallel dims: dp_replicate(1) * dp_shard(1) * cp(1) * tp(2) * pp(1) != WORLD_SIZE(4)
+  
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-28_21:59:02
+  host      : holygpu8a31305.rc.fas.harvard.edu
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 576447) 
+  error_file: /tmp/torchelastic_2fx09b1k/none_9rl2oeng/attempt_0/3/error.json
+  traceback : Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+      return f(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 239, in __init__
+      self.parallel_dims = parallel_dims = self.init_distributed()
+                                           ~~~~~~~~~~~~~~~~~~~~~^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 581, in init_distributed
+      return ParallelDims.from_config(config.parallelism, world_size)
+             ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 151, in from_config
+      return cls(
+          dp_replicate=parallelism_config.data_parallel_replicate_degree,
+      ...<6 lines>...
+          spmd_backend=parallelism_config.spmd_backend,
+      )
+    File "<string>", line 15, in __init__
+    File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 163, in __post_init__
+      self._validate()
+      ~~~~~~~~~~~~~~^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/distributed/parallel_dims.py", line 181, in _validate
+      assert dp_replicate * dp_shard * cp * tp * pp == self.world_size, (
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  AssertionError: Invalid parallel dims: dp_replicate(1) * dp_shard(1) * cp(1) * tp(2) * pp(1) != WORLD_SIZE(4)
+  
+============================================================
