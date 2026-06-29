@@ -1,0 +1,992 @@
+[W629 00:44:01.884819862 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W629 00:44:01.888079347 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W629 00:44:02.202776531 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a25205.rc.fas.harvard.edu]:43475 (errno: 97 - Address family not supported by protocol).
+[W629 00:45:17.760289911 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a25205.rc.fas.harvard.edu]:43475 (errno: 97 - Address family not supported by protocol).
+[W629 00:45:17.760342430 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a25205.rc.fas.harvard.edu]:43475 (errno: 97 - Address family not supported by protocol).
+[W629 00:45:17.760342828 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a25205.rc.fas.harvard.edu]:43475 (errno: 97 - Address family not supported by protocol).
+[W629 00:45:17.760775344 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a25205.rc.fas.harvard.edu]:43475 (errno: 97 - Address family not supported by protocol).
+/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torchdata/stateful_dataloader/stateful_dataloader.py:379: UserWarning: 'set_vital' is deprecated, please do not call
+  torch.set_vital("Dataloader", "enabled", "True")  # type: ignore[attr-defined]
+/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torchdata/stateful_dataloader/stateful_dataloader.py:379: UserWarning: 'set_vital' is deprecated, please do not call
+  torch.set_vital("Dataloader", "enabled", "True")  # type: ignore[attr-defined]
+/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torchdata/stateful_dataloader/stateful_dataloader.py:379: UserWarning: 'set_vital' is deprecated, please do not call
+  torch.set_vital("Dataloader", "enabled", "True")  # type: ignore[attr-defined]
+/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torchdata/stateful_dataloader/stateful_dataloader.py:379: UserWarning: 'set_vital' is deprecated, please do not call
+  torch.set_vital("Dataloader", "enabled", "True")  # type: ignore[attr-defined]
+/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_inductor/select_algorithm.py:4628: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  current_out_size = out_base.storage().size()
+[rank2]:E0629 00:46:38.561000 4165705 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Runtime error during autotuning: 
+[rank2]:E0629 00:46:38.561000 4165705 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] No valid triton configs. OutOfMemoryError: out of resource: triton_flex_attention Required: 263168 Hardware limit:166912 Reducing block sizes or `num_stages` may help.. 
+[rank2]:E0629 00:46:38.561000 4165705 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Ignoring this choice.
+/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_inductor/select_algorithm.py:4628: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  current_out_size = out_base.storage().size()
+/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_inductor/select_algorithm.py:4628: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  current_out_size = out_base.storage().size()
+[rank1]:E0629 00:46:38.675000 4165704 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Runtime error during autotuning: 
+[rank1]:E0629 00:46:38.675000 4165704 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] No valid triton configs. OutOfMemoryError: out of resource: triton_flex_attention Required: 263168 Hardware limit:166912 Reducing block sizes or `num_stages` may help.. 
+[rank1]:E0629 00:46:38.675000 4165704 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Ignoring this choice.
+[rank3]:E0629 00:46:38.729000 4165706 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Runtime error during autotuning: 
+[rank3]:E0629 00:46:38.729000 4165706 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] No valid triton configs. OutOfMemoryError: out of resource: triton_flex_attention Required: 263168 Hardware limit:166912 Reducing block sizes or `num_stages` may help.. 
+[rank3]:E0629 00:46:38.729000 4165706 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Ignoring this choice.
+/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_inductor/select_algorithm.py:4628: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  current_out_size = out_base.storage().size()
+[rank0]:E0629 00:46:39.035000 4165703 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Runtime error during autotuning: 
+[rank0]:E0629 00:46:39.035000 4165703 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] No valid triton configs. OutOfMemoryError: out of resource: triton_flex_attention Required: 263168 Hardware limit:166912 Reducing block sizes or `num_stages` may help.. 
+[rank0]:E0629 00:46:39.035000 4165703 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Ignoring this choice.
+[rank2]:E0629 00:46:39.399000 4165705 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Runtime error during autotuning: 
+[rank2]:E0629 00:46:39.399000 4165705 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] No valid triton configs. OutOfMemoryError: out of resource: triton_flex_attention Required: 246784 Hardware limit:166912 Reducing block sizes or `num_stages` may help.. 
+[rank2]:E0629 00:46:39.399000 4165705 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Ignoring this choice.
+Autotune Choices Stats:
+{"num_choices": 6, "num_triton_choices": 6, "best_kernel": "triton_flex_attention_2", "best_kernel_desc": "BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION=\"'ieee'\", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=2, num_warps=8", "best_time": 2.7727038860321045, "best_triton_pos": 0}
+AUTOTUNE flex_attention(8x8x2048x192, 8x8x2048x192, 8x8x2048x128, 8x8x2048, 8x8x2048, 8x1x16, 8x1x16x16, 8x1x16, 8x1x16x16, 8x2048)
+strides: [3145728, 192, 1536, 1], [3145728, 192, 1536, 1], [4194304, 256, 2048, 1], [16384, 2048, 1], [16384, 2048, 1], [16, 16, 1], [256, 256, 16, 1], [16, 16, 1], [256, 256, 16, 1], [2048, 1]
+dtypes: torch.bfloat16, torch.bfloat16, torch.bfloat16, torch.float32, torch.float32, torch.int32, torch.int32, torch.int32, torch.int32, torch.int32
+  triton_flex_attention_2 2.7727 ms 100.0% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=2, num_warps=8
+  triton_flex_attention_5 3.7348 ms 74.2% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=64, BLOCK_N=64, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+  triton_flex_attention_0 4.9030 ms 56.6% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=64, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+  triton_flex_attention_3 109.0607 ms 2.5% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=1, num_warps=8
+  triton_flex_attention_1 inf ms 0.0% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+  triton_flex_attention_4 inf ms 0.0% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=64, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+SingleProcess AUTOTUNE benchmarking takes 1.0596 seconds and 6.3124 seconds precompiling for 6 choices
+[rank1]:E0629 00:46:39.520000 4165704 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Runtime error during autotuning: 
+[rank1]:E0629 00:46:39.520000 4165704 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] No valid triton configs. OutOfMemoryError: out of resource: triton_flex_attention Required: 246784 Hardware limit:166912 Reducing block sizes or `num_stages` may help.. 
+[rank1]:E0629 00:46:39.520000 4165704 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Ignoring this choice.
+Autotune Choices Stats:
+{"num_choices": 6, "num_triton_choices": 6, "best_kernel": "triton_flex_attention_2", "best_kernel_desc": "BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION=\"'ieee'\", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=2, num_warps=8", "best_time": 3.015968084335327, "best_triton_pos": 0}
+[rank3]:E0629 00:46:39.575000 4165706 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Runtime error during autotuning: 
+[rank3]:E0629 00:46:39.575000 4165706 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] No valid triton configs. OutOfMemoryError: out of resource: triton_flex_attention Required: 246784 Hardware limit:166912 Reducing block sizes or `num_stages` may help.. 
+[rank3]:E0629 00:46:39.575000 4165706 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Ignoring this choice.
+AUTOTUNE flex_attention(8x8x2048x192, 8x8x2048x192, 8x8x2048x128, 8x8x2048, 8x8x2048, 8x1x16, 8x1x16x16, 8x1x16, 8x1x16x16, 8x2048)
+strides: [3145728, 192, 1536, 1], [3145728, 192, 1536, 1], [4194304, 256, 2048, 1], [16384, 2048, 1], [16384, 2048, 1], [16, 16, 1], [256, 256, 16, 1], [16, 16, 1], [256, 256, 16, 1], [2048, 1]
+dtypes: torch.bfloat16, torch.bfloat16, torch.bfloat16, torch.float32, torch.float32, torch.int32, torch.int32, torch.int32, torch.int32, torch.int32
+  triton_flex_attention_2 3.0160 ms 100.0% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=2, num_warps=8
+  triton_flex_attention_5 3.7256 ms 81.0% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=64, BLOCK_N=64, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+  triton_flex_attention_0 4.8827 ms 61.8% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=64, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+  triton_flex_attention_3 108.6749 ms 2.8% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=1, num_warps=8
+  triton_flex_attention_1 inf ms 0.0% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+  triton_flex_attention_4 inf ms 0.0% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=64, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+SingleProcess AUTOTUNE benchmarking takes 0.9833 seconds and 6.5055 seconds precompiling for 6 choices
+Autotune Choices Stats:
+{"num_choices": 6, "num_triton_choices": 6, "best_kernel": "triton_flex_attention_2", "best_kernel_desc": "BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION=\"'ieee'\", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=2, num_warps=8", "best_time": 3.020128011703491, "best_triton_pos": 0}
+AUTOTUNE flex_attention(8x8x2048x192, 8x8x2048x192, 8x8x2048x128, 8x8x2048, 8x8x2048, 8x1x16, 8x1x16x16, 8x1x16, 8x1x16x16, 8x2048)
+strides: [3145728, 192, 1536, 1], [3145728, 192, 1536, 1], [4194304, 256, 2048, 1], [16384, 2048, 1], [16384, 2048, 1], [16, 16, 1], [256, 256, 16, 1], [16, 16, 1], [256, 256, 16, 1], [2048, 1]
+dtypes: torch.bfloat16, torch.bfloat16, torch.bfloat16, torch.float32, torch.float32, torch.int32, torch.int32, torch.int32, torch.int32, torch.int32
+  triton_flex_attention_2 3.0201 ms 100.0% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=2, num_warps=8
+  triton_flex_attention_5 3.7272 ms 81.0% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=64, BLOCK_N=64, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+  triton_flex_attention_0 4.8998 ms 61.6% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=64, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+  triton_flex_attention_3 109.2296 ms 2.8% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=1, num_warps=8
+  triton_flex_attention_1 inf ms 0.0% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+  triton_flex_attention_4 inf ms 0.0% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=64, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+SingleProcess AUTOTUNE benchmarking takes 0.9829 seconds and 6.5660 seconds precompiling for 6 choices
+[rank0]:E0629 00:46:39.876000 4165703 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Runtime error during autotuning: 
+[rank0]:E0629 00:46:39.876000 4165703 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] No valid triton configs. OutOfMemoryError: out of resource: triton_flex_attention Required: 246784 Hardware limit:166912 Reducing block sizes or `num_stages` may help.. 
+[rank0]:E0629 00:46:39.876000 4165703 site-packages/torch/_inductor/select_algorithm.py:4888] [1/0] Ignoring this choice.
+Autotune Choices Stats:
+{"num_choices": 6, "num_triton_choices": 6, "best_kernel": "triton_flex_attention_2", "best_kernel_desc": "BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION=\"'ieee'\", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=2, num_warps=8", "best_time": 3.0178239345550537, "best_triton_pos": 0}
+AUTOTUNE flex_attention(8x8x2048x192, 8x8x2048x192, 8x8x2048x128, 8x8x2048, 8x8x2048, 8x1x16, 8x1x16x16, 8x1x16, 8x1x16x16, 8x2048)
+strides: [3145728, 192, 1536, 1], [3145728, 192, 1536, 1], [4194304, 256, 2048, 1], [16384, 2048, 1], [16384, 2048, 1], [16, 16, 1], [256, 256, 16, 1], [16, 16, 1], [256, 256, 16, 1], [2048, 1]
+dtypes: torch.bfloat16, torch.bfloat16, torch.bfloat16, torch.float32, torch.float32, torch.int32, torch.int32, torch.int32, torch.int32, torch.int32
+  triton_flex_attention_2 3.0178 ms 100.0% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=2, num_warps=8
+  triton_flex_attention_5 3.7233 ms 81.1% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=64, BLOCK_N=64, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+  triton_flex_attention_0 4.8907 ms 61.7% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=64, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+  triton_flex_attention_3 109.1992 ms 2.8% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=1, num_warps=8
+  triton_flex_attention_1 inf ms 0.0% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=128, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+  triton_flex_attention_4 inf ms 0.0% BLOCKS_ARE_CONTIGUOUS=False, BLOCK_M=64, BLOCK_N=128, FLOAT32_PRECISION="'ieee'", GQA_SHARED_HEADS=1, HAS_FULL_BLOCKS=True, IS_DIVISIBLE=True, OUTPUT_LOGSUMEXP=True, OUTPUT_MAX=False, PRESCALE_QK=False, QK_HEAD_DIM=192, QK_HEAD_DIM_ROUNDED=256, ROWS_GUARANTEED_SAFE=False, SAFE_HEAD_DIM=False, SM_SCALE=0.07216878364870322, SPARSE_KV_BLOCK_SIZE=128, SPARSE_Q_BLOCK_SIZE=128, USE_TMA=False, V_HEAD_DIM=128, V_HEAD_DIM_ROUNDED=128, WRITE_DQ=True, num_stages=3, num_warps=4
+SingleProcess AUTOTUNE benchmarking takes 0.9778 seconds and 6.8726 seconds precompiling for 6 choices
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 253, in _propagate_op_sharding_dispatch_slow_path
+[rank2]:     result = self.sharding_propagator.propagate_op_sharding_non_cached(
+[rank2]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_sharding_prop.py", line 718, in propagate_op_sharding_non_cached
+[rank2]:     op_strategy = op_strategy_func(strategy_schema)
+[rank2]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/_tensor_ops.py", line 635, in scatter_strategy
+[rank2]:     op_strategy = expand_to_full_mesh_op_strategy(
+[rank2]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/utils.py", line 607, in expand_to_full_mesh_op_strategy
+[rank2]:     raise RuntimeError(
+[rank2]: RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+
+[rank2]: The above exception was the direct cause of the following exception:
+
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank2]:   File "<frozen runpy>", line 88, in _run_code
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+[rank2]:     main()
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 65, in main
+[rank2]:     trainer.train()
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+[rank2]:     return f(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+[rank2]:     self.train_step(data_iterator)
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+[rank2]:     loss = self.forward_backward_step(
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank2]:     return func(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 746, in forward_backward_step
+[rank2]:     pred = model_parts[0](inputs, **extra_kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+[rank2]:     return inner()
+[rank2]:            ^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+[rank2]:     result = forward_call(*args, **kwargs)
+[rank2]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 274, in forward
+[rank2]:     h = layer(h, attention_masks, positions)
+[rank2]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+[rank2]:     return inner()
+[rank2]:            ^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+[rank2]:     result = forward_call(*args, **kwargs)
+[rank2]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/algorithms/_checkpoint/checkpoint_wrapper.py", line 169, in forward
+[rank2]:     return self.checkpoint_fn(  # type: ignore[misc]
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+[rank2]:     return disable_fn(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+[rank2]:     return fn(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 517, in checkpoint
+[rank2]:     ret = function(*args, **kwargs)
+[rank2]:           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+[rank2]:     return forward_call(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/deepseek_v3/model.py", line 180, in forward
+[rank2]:     x = x + self.moe(self.ffn_norm(x))
+[rank2]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+[rank2]:     return forward_call(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/protocols/module.py", line 291, in forward_with_redistribution
+[rank2]:     outputs = fn(*args, **kwargs)
+[rank2]:               ^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/moe.py", line 452, in forward
+[rank2]:     routing_map_BLE = torch.zeros_like(scores_BLE, dtype=torch.bool).scatter_(
+[rank2]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+[rank2]:     return disable_fn(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+[rank2]:     return fn(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 1350, in __torch_dispatch__
+[rank2]:     out = func(*args, **kwargs)
+[rank2]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_ops.py", line 871, in __call__
+[rank2]:     return self._op(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 277, in _propagate_op_sharding_dispatch_slow_path
+[rank2]:     raise RuntimeError(
+[rank2]: RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+
+[rank2]: Sharding propagation failed for aten.scatter_.value(Spec(b8[8, 2048, 8](S(1))), -1, Spec(i64[8, 2048, 3](S(1))), True) on DeviceMesh((tp=2), 'cuda', stride=(1,)))
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 253, in _propagate_op_sharding_dispatch_slow_path
+[rank3]:     result = self.sharding_propagator.propagate_op_sharding_non_cached(
+[rank3]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_sharding_prop.py", line 718, in propagate_op_sharding_non_cached
+[rank3]:     op_strategy = op_strategy_func(strategy_schema)
+[rank3]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/_tensor_ops.py", line 635, in scatter_strategy
+[rank3]:     op_strategy = expand_to_full_mesh_op_strategy(
+[rank3]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/utils.py", line 607, in expand_to_full_mesh_op_strategy
+[rank3]:     raise RuntimeError(
+[rank3]: RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+
+[rank3]: The above exception was the direct cause of the following exception:
+
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank3]:   File "<frozen runpy>", line 88, in _run_code
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+[rank3]:     main()
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 65, in main
+[rank3]:     trainer.train()
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+[rank3]:     return f(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+[rank3]:     self.train_step(data_iterator)
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+[rank3]:     loss = self.forward_backward_step(
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank3]:     return func(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 746, in forward_backward_step
+[rank3]:     pred = model_parts[0](inputs, **extra_kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank3]:     return self._call_impl(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+[rank3]:     return inner()
+[rank3]:            ^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+[rank3]:     result = forward_call(*args, **kwargs)
+[rank3]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 274, in forward
+[rank3]:     h = layer(h, attention_masks, positions)
+[rank3]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank3]:     return self._call_impl(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+[rank3]:     return inner()
+[rank3]:            ^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+[rank3]:     result = forward_call(*args, **kwargs)
+[rank3]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/algorithms/_checkpoint/checkpoint_wrapper.py", line 169, in forward
+[rank3]:     return self.checkpoint_fn(  # type: ignore[misc]
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+[rank3]:     return disable_fn(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+[rank3]:     return fn(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 517, in checkpoint
+[rank3]:     ret = function(*args, **kwargs)
+[rank3]:           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank3]:     return self._call_impl(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+[rank3]:     return forward_call(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/deepseek_v3/model.py", line 180, in forward
+[rank3]:     x = x + self.moe(self.ffn_norm(x))
+[rank3]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank3]:     return self._call_impl(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+[rank3]:     return forward_call(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/protocols/module.py", line 291, in forward_with_redistribution
+[rank3]:     outputs = fn(*args, **kwargs)
+[rank3]:               ^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/moe.py", line 452, in forward
+[rank3]:     routing_map_BLE = torch.zeros_like(scores_BLE, dtype=torch.bool).scatter_(
+[rank3]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+[rank3]:     return disable_fn(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+[rank3]:     return fn(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 1350, in __torch_dispatch__
+[rank3]:     out = func(*args, **kwargs)
+[rank3]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_ops.py", line 871, in __call__
+[rank3]:     return self._op(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 277, in _propagate_op_sharding_dispatch_slow_path
+[rank3]:     raise RuntimeError(
+[rank3]: RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+
+[rank3]: Sharding propagation failed for aten.scatter_.value(Spec(b8[8, 2048, 8](S(1))), -1, Spec(i64[8, 2048, 3](S(1))), True) on DeviceMesh((tp=2), 'cuda', stride=(1,)))
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 253, in _propagate_op_sharding_dispatch_slow_path
+[rank1]:     result = self.sharding_propagator.propagate_op_sharding_non_cached(
+[rank1]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_sharding_prop.py", line 718, in propagate_op_sharding_non_cached
+[rank1]:     op_strategy = op_strategy_func(strategy_schema)
+[rank1]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/_tensor_ops.py", line 635, in scatter_strategy
+[rank1]:     op_strategy = expand_to_full_mesh_op_strategy(
+[rank1]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/utils.py", line 607, in expand_to_full_mesh_op_strategy
+[rank1]:     raise RuntimeError(
+[rank1]: RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+
+[rank1]: The above exception was the direct cause of the following exception:
+
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+[rank1]:     main()
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 65, in main
+[rank1]:     trainer.train()
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+[rank1]:     return f(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+[rank1]:     self.train_step(data_iterator)
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+[rank1]:     loss = self.forward_backward_step(
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank1]:     return func(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 746, in forward_backward_step
+[rank1]:     pred = model_parts[0](inputs, **extra_kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank1]:     return self._call_impl(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+[rank1]:     return inner()
+[rank1]:            ^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+[rank1]:     result = forward_call(*args, **kwargs)
+[rank1]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 274, in forward
+[rank1]:     h = layer(h, attention_masks, positions)
+[rank1]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank1]:     return self._call_impl(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+[rank1]:     return inner()
+[rank1]:            ^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+[rank1]:     result = forward_call(*args, **kwargs)
+[rank1]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/algorithms/_checkpoint/checkpoint_wrapper.py", line 169, in forward
+[rank1]:     return self.checkpoint_fn(  # type: ignore[misc]
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+[rank1]:     return disable_fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+[rank1]:     return fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 517, in checkpoint
+[rank1]:     ret = function(*args, **kwargs)
+[rank1]:           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank1]:     return self._call_impl(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+[rank1]:     return forward_call(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/deepseek_v3/model.py", line 180, in forward
+[rank1]:     x = x + self.moe(self.ffn_norm(x))
+[rank1]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank1]:     return self._call_impl(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+[rank1]:     return forward_call(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/protocols/module.py", line 291, in forward_with_redistribution
+[rank1]:     outputs = fn(*args, **kwargs)
+[rank1]:               ^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/moe.py", line 452, in forward
+[rank1]:     routing_map_BLE = torch.zeros_like(scores_BLE, dtype=torch.bool).scatter_(
+[rank1]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+[rank1]:     return disable_fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+[rank1]:     return fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 1350, in __torch_dispatch__
+[rank1]:     out = func(*args, **kwargs)
+[rank1]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_ops.py", line 871, in __call__
+[rank1]:     return self._op(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 277, in _propagate_op_sharding_dispatch_slow_path
+[rank1]:     raise RuntimeError(
+[rank1]: RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+
+[rank1]: Sharding propagation failed for aten.scatter_.value(Spec(b8[8, 2048, 8](S(1))), -1, Spec(i64[8, 2048, 3](S(1))), True) on DeviceMesh((tp=2), 'cuda', stride=(1,)))
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 253, in _propagate_op_sharding_dispatch_slow_path
+[rank0]:     result = self.sharding_propagator.propagate_op_sharding_non_cached(
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_sharding_prop.py", line 718, in propagate_op_sharding_non_cached
+[rank0]:     op_strategy = op_strategy_func(strategy_schema)
+[rank0]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/_tensor_ops.py", line 635, in scatter_strategy
+[rank0]:     op_strategy = expand_to_full_mesh_op_strategy(
+[rank0]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/utils.py", line 607, in expand_to_full_mesh_op_strategy
+[rank0]:     raise RuntimeError(
+[rank0]: RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+
+[rank0]: The above exception was the direct cause of the following exception:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+[rank0]:     main()
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 65, in main
+[rank0]:     trainer.train()
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+[rank0]:     return f(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+[rank0]:     self.train_step(data_iterator)
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+[rank0]:     loss = self.forward_backward_step(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 746, in forward_backward_step
+[rank0]:     pred = model_parts[0](inputs, **extra_kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+[rank0]:     return inner()
+[rank0]:            ^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+[rank0]:     result = forward_call(*args, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 274, in forward
+[rank0]:     h = layer(h, attention_masks, positions)
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+[rank0]:     return inner()
+[rank0]:            ^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+[rank0]:     result = forward_call(*args, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/algorithms/_checkpoint/checkpoint_wrapper.py", line 169, in forward
+[rank0]:     return self.checkpoint_fn(  # type: ignore[misc]
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+[rank0]:     return disable_fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 517, in checkpoint
+[rank0]:     ret = function(*args, **kwargs)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/deepseek_v3/model.py", line 180, in forward
+[rank0]:     x = x + self.moe(self.ffn_norm(x))
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/protocols/module.py", line 291, in forward_with_redistribution
+[rank0]:     outputs = fn(*args, **kwargs)
+[rank0]:               ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/moe.py", line 452, in forward
+[rank0]:     routing_map_BLE = torch.zeros_like(scores_BLE, dtype=torch.bool).scatter_(
+[rank0]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+[rank0]:     return disable_fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 1350, in __torch_dispatch__
+[rank0]:     out = func(*args, **kwargs)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_ops.py", line 871, in __call__
+[rank0]:     return self._op(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 277, in _propagate_op_sharding_dispatch_slow_path
+[rank0]:     raise RuntimeError(
+[rank0]: RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+
+[rank0]: Sharding propagation failed for aten.scatter_.value(Spec(b8[8, 2048, 8](S(1))), -1, Spec(i64[8, 2048, 3](S(1))), True) on DeviceMesh((tp=2), 'cuda', stride=(1,)))
+W0629 00:46:52.495000 4165121 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 4165703 closing signal SIGTERM
+W0629 00:46:52.500000 4165121 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 4165704 closing signal SIGTERM
+W0629 00:46:52.500000 4165121 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 4165705 closing signal SIGTERM
+E0629 00:46:52.827000 4165121 site-packages/torch/distributed/elastic/multiprocessing/api.py:988] failed (exitcode: 1) local_rank: 3 (pid: 4165706) of binary: /n/home03/minghaoli/.conda/envs/torchtitan/bin/python3.11
+E0629 00:46:52.851000 4165121 site-packages/torch/distributed/elastic/multiprocessing/errors/error_handler.py:145] no error file defined for parent, to copy child error file (/tmp/torchelastic_f7dws8xv/none_caiogt_n/attempt_0/3/error.json)
+Traceback (most recent call last):
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/run.py", line 1016, in main
+    run(args)
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/run.py", line 1007, in run
+    elastic_launch(
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 184, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 332, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+torchtitan.train FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-06-29_00:46:43
+  host      : holygpu8a25205.rc.fas.harvard.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 4165703) 
+  error_file: /tmp/torchelastic_f7dws8xv/none_caiogt_n/attempt_0/0/error.json
+  traceback : Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 253, in _propagate_op_sharding_dispatch_slow_path
+      result = self.sharding_propagator.propagate_op_sharding_non_cached(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_sharding_prop.py", line 718, in propagate_op_sharding_non_cached
+      op_strategy = op_strategy_func(strategy_schema)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/_tensor_ops.py", line 635, in scatter_strategy
+      op_strategy = expand_to_full_mesh_op_strategy(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/utils.py", line 607, in expand_to_full_mesh_op_strategy
+      raise RuntimeError(
+  RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+  
+  The above exception was the direct cause of the following exception:
+  
+  Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+      return f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+      self.train_step(data_iterator)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+      loss = self.forward_backward_step(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 746, in forward_backward_step
+      pred = model_parts[0](inputs, **extra_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+      return inner()
+             ^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+      result = forward_call(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 274, in forward
+      h = layer(h, attention_masks, positions)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+      return inner()
+             ^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+      result = forward_call(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/algorithms/_checkpoint/checkpoint_wrapper.py", line 169, in forward
+      return self.checkpoint_fn(  # type: ignore[misc]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+      return disable_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+      return fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 517, in checkpoint
+      ret = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+      return forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/deepseek_v3/model.py", line 180, in forward
+      x = x + self.moe(self.ffn_norm(x))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+      return forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/protocols/module.py", line 291, in forward_with_redistribution
+      outputs = fn(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/moe.py", line 452, in forward
+      routing_map_BLE = torch.zeros_like(scores_BLE, dtype=torch.bool).scatter_(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+      return disable_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+      return fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 1350, in __torch_dispatch__
+      out = func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_ops.py", line 871, in __call__
+      return self._op(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 277, in _propagate_op_sharding_dispatch_slow_path
+      raise RuntimeError(
+  RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+  
+  Sharding propagation failed for aten.scatter_.value(Spec(b8[8, 2048, 8](S(1))), -1, Spec(i64[8, 2048, 3](S(1))), True) on DeviceMesh((tp=2), 'cuda', stride=(1,)))
+  
+[2]:
+  time      : 2026-06-29_00:46:43
+  host      : holygpu8a25205.rc.fas.harvard.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 4165704) 
+  error_file: /tmp/torchelastic_f7dws8xv/none_caiogt_n/attempt_0/1/error.json
+  traceback : Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 253, in _propagate_op_sharding_dispatch_slow_path
+      result = self.sharding_propagator.propagate_op_sharding_non_cached(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_sharding_prop.py", line 718, in propagate_op_sharding_non_cached
+      op_strategy = op_strategy_func(strategy_schema)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/_tensor_ops.py", line 635, in scatter_strategy
+      op_strategy = expand_to_full_mesh_op_strategy(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/utils.py", line 607, in expand_to_full_mesh_op_strategy
+      raise RuntimeError(
+  RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+  
+  The above exception was the direct cause of the following exception:
+  
+  Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+      return f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+      self.train_step(data_iterator)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+      loss = self.forward_backward_step(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 746, in forward_backward_step
+      pred = model_parts[0](inputs, **extra_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+      return inner()
+             ^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+      result = forward_call(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 274, in forward
+      h = layer(h, attention_masks, positions)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+      return inner()
+             ^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+      result = forward_call(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/algorithms/_checkpoint/checkpoint_wrapper.py", line 169, in forward
+      return self.checkpoint_fn(  # type: ignore[misc]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+      return disable_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+      return fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 517, in checkpoint
+      ret = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+      return forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/deepseek_v3/model.py", line 180, in forward
+      x = x + self.moe(self.ffn_norm(x))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+      return forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/protocols/module.py", line 291, in forward_with_redistribution
+      outputs = fn(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/moe.py", line 452, in forward
+      routing_map_BLE = torch.zeros_like(scores_BLE, dtype=torch.bool).scatter_(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+      return disable_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+      return fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 1350, in __torch_dispatch__
+      out = func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_ops.py", line 871, in __call__
+      return self._op(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 277, in _propagate_op_sharding_dispatch_slow_path
+      raise RuntimeError(
+  RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+  
+  Sharding propagation failed for aten.scatter_.value(Spec(b8[8, 2048, 8](S(1))), -1, Spec(i64[8, 2048, 3](S(1))), True) on DeviceMesh((tp=2), 'cuda', stride=(1,)))
+  
+[3]:
+  time      : 2026-06-29_00:46:43
+  host      : holygpu8a25205.rc.fas.harvard.edu
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 4165705) 
+  error_file: /tmp/torchelastic_f7dws8xv/none_caiogt_n/attempt_0/2/error.json
+  traceback : Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 253, in _propagate_op_sharding_dispatch_slow_path
+      result = self.sharding_propagator.propagate_op_sharding_non_cached(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_sharding_prop.py", line 718, in propagate_op_sharding_non_cached
+      op_strategy = op_strategy_func(strategy_schema)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/_tensor_ops.py", line 635, in scatter_strategy
+      op_strategy = expand_to_full_mesh_op_strategy(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/utils.py", line 607, in expand_to_full_mesh_op_strategy
+      raise RuntimeError(
+  RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+  
+  The above exception was the direct cause of the following exception:
+  
+  Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+      return f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+      self.train_step(data_iterator)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+      loss = self.forward_backward_step(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 746, in forward_backward_step
+      pred = model_parts[0](inputs, **extra_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+      return inner()
+             ^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+      result = forward_call(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 274, in forward
+      h = layer(h, attention_masks, positions)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+      return inner()
+             ^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+      result = forward_call(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/algorithms/_checkpoint/checkpoint_wrapper.py", line 169, in forward
+      return self.checkpoint_fn(  # type: ignore[misc]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+      return disable_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+      return fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 517, in checkpoint
+      ret = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+      return forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/deepseek_v3/model.py", line 180, in forward
+      x = x + self.moe(self.ffn_norm(x))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+      return forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/protocols/module.py", line 291, in forward_with_redistribution
+      outputs = fn(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/moe.py", line 452, in forward
+      routing_map_BLE = torch.zeros_like(scores_BLE, dtype=torch.bool).scatter_(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+      return disable_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+      return fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 1350, in __torch_dispatch__
+      out = func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_ops.py", line 871, in __call__
+      return self._op(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 277, in _propagate_op_sharding_dispatch_slow_path
+      raise RuntimeError(
+  RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+  
+  Sharding propagation failed for aten.scatter_.value(Spec(b8[8, 2048, 8](S(1))), -1, Spec(i64[8, 2048, 3](S(1))), True) on DeviceMesh((tp=2), 'cuda', stride=(1,)))
+  
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-29_00:46:43
+  host      : holygpu8a25205.rc.fas.harvard.edu
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 4165706) 
+  error_file: /tmp/torchelastic_f7dws8xv/none_caiogt_n/attempt_0/3/error.json
+  traceback : Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 253, in _propagate_op_sharding_dispatch_slow_path
+      result = self.sharding_propagator.propagate_op_sharding_non_cached(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_sharding_prop.py", line 718, in propagate_op_sharding_non_cached
+      op_strategy = op_strategy_func(strategy_schema)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/_tensor_ops.py", line 635, in scatter_strategy
+      op_strategy = expand_to_full_mesh_op_strategy(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_ops/utils.py", line 607, in expand_to_full_mesh_op_strategy
+      raise RuntimeError(
+  RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+  
+  The above exception was the direct cause of the following exception:
+  
+  Traceback (most recent call last):
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+      return f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 894, in train
+      self.train_step(data_iterator)
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 797, in train_step
+      loss = self.forward_backward_step(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/observability/structured_logger/structured_logging.py", line 441, in sync_wrapper
+      return func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/trainer.py", line 746, in forward_backward_step
+      pred = model_parts[0](inputs, **extra_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+      return inner()
+             ^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+      result = forward_call(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/decoder.py", line 274, in forward
+      h = layer(h, attention_masks, positions)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1884, in _call_impl
+      return inner()
+             ^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1832, in inner
+      result = forward_call(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/algorithms/_checkpoint/checkpoint_wrapper.py", line 169, in forward
+      return self.checkpoint_fn(  # type: ignore[misc]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+      return disable_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+      return fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 517, in checkpoint
+      ret = function(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+      return forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/deepseek_v3/model.py", line 180, in forward
+      x = x + self.moe(self.ffn_norm(x))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+      return self._call_impl(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+      return forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/protocols/module.py", line 291, in forward_with_redistribution
+      outputs = fn(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/torchtitan/torchtitan/models/common/moe.py", line 452, in forward
+      routing_map_BLE = torch.zeros_like(scores_BLE, dtype=torch.bool).scatter_(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_compile.py", line 54, in inner
+      return disable_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1269, in _fn
+      return fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 1350, in __torch_dispatch__
+      out = func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/_ops.py", line 871, in __call__
+      return self._op(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 277, in _propagate_op_sharding_dispatch_slow_path
+      raise RuntimeError(
+  RuntimeError: aten.scatter_.value: in-place operations that require placement changes are not supported. The input has placement (Shard(dim=1),), but no valid strategy preserves this placement. Please use the out-of-place version of this operation instead.
+  
+  Sharding propagation failed for aten.scatter_.value(Spec(b8[8, 2048, 8](S(1))), -1, Spec(i64[8, 2048, 3](S(1))), True) on DeviceMesh((tp=2), 'cuda', stride=(1,)))
+  
+============================================================
