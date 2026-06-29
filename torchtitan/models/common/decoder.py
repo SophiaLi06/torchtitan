@@ -303,12 +303,6 @@ class Decoder(BaseModel):
             seq_len,
             device=positions.device,
             BLOCK_SIZE=attn_config.inner_attention.block_size,
-            # when separate_full_blocks = True, kernel iterates through
-            # full blocks first (blocks where all elements are unmasked)
-            # but which blocks are "full" vs "partial" changes depending
-            # on the particular batch
-            # for batch invariance, we disable this optimization
-            separate_full_blocks=not is_in_batch_invariant_mode(),
         )
 
     def get_attention_masks(
