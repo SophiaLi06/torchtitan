@@ -447,9 +447,9 @@ class MoE(Module):
 
         # Build a one-hot routing map (B, L, E) marking the experts each token
         # is routed to. Under TP/SP the router outputs are DTensors sharded on
-        # the token dim; scatter_ writes along the (replicated) expert dim, so
+        # the token dim; scatter writes along the (replicated) expert dim, so
         # DTensor runs it as a local op with no redistribution.
-        routing_map_BLE = torch.zeros_like(scores_BLE, dtype=torch.bool).scatter_(
+        routing_map_BLE = torch.zeros_like(scores_BLE, dtype=torch.bool).scatter(
             -1,
             topk_expert_ids_BLK,
             True,
