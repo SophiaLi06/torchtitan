@@ -1,0 +1,131 @@
+[W628 21:39:50.892186918 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W628 21:39:50.895523447 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W628 21:39:50.152264856 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [holygpu8a22104.rc.fas.harvard.edu]:37207 (errno: 97 - Address family not supported by protocol).
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+    main()
+    ~~~~^^
+  File "<frozen runpy>", line 88, in _run_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+    main()
+    ~~~~^^
+  File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 29, in main
+    config = config_manager.parse_args()
+  File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+    main()
+    ~~~~^^
+  File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 79, in <module>
+    main()
+    ~~~~^^
+  File "/n/home03/minghaoli/torchtitan/torchtitan/config/manager.py", line 37, in parse_args
+    loaded_config, args = self._load_config(args)
+                          ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 29, in main
+    config = config_manager.parse_args()
+  File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 29, in main
+    config = config_manager.parse_args()
+  File "/n/home03/minghaoli/torchtitan/torchtitan/train.py", line 29, in main
+    config = config_manager.parse_args()
+  File "/n/home03/minghaoli/torchtitan/torchtitan/config/manager.py", line 37, in parse_args
+    loaded_config, args = self._load_config(args)
+                          ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/n/home03/minghaoli/torchtitan/torchtitan/config/manager.py", line 86, in _load_config
+    raise ValueError(
+        "--module is required. Example: --module llama3 --config llama3_debugmodel"
+    )
+  File "/n/home03/minghaoli/torchtitan/torchtitan/config/manager.py", line 37, in parse_args
+    loaded_config, args = self._load_config(args)
+                          ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/n/home03/minghaoli/torchtitan/torchtitan/config/manager.py", line 37, in parse_args
+    loaded_config, args = self._load_config(args)
+                          ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/n/home03/minghaoli/torchtitan/torchtitan/config/manager.py", line 86, in _load_config
+    raise ValueError(
+        "--module is required. Example: --module llama3 --config llama3_debugmodel"
+    )
+  File "/n/home03/minghaoli/torchtitan/torchtitan/config/manager.py", line 86, in _load_config
+    raise ValueError(
+        "--module is required. Example: --module llama3 --config llama3_debugmodel"
+    )
+  File "/n/home03/minghaoli/torchtitan/torchtitan/config/manager.py", line 86, in _load_config
+    raise ValueError(
+        "--module is required. Example: --module llama3 --config llama3_debugmodel"
+    )
+ValueError: --module is required. Example: --module llama3 --config llama3_debugmodel
+ValueError: --module is required. Example: --module llama3 --config llama3_debugmodel
+ValueError: --module is required. Example: --module llama3 --config llama3_debugmodel
+ValueError: --module is required. Example: --module llama3 --config llama3_debugmodel
+W0628 21:41:29.293000 811605 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 811640 closing signal SIGTERM
+W0628 21:41:29.299000 811605 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 811641 closing signal SIGTERM
+W0628 21:41:29.299000 811605 site-packages/torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 811642 closing signal SIGTERM
+E0628 21:41:29.345000 811605 site-packages/torch/distributed/elastic/multiprocessing/api.py:988] failed (exitcode: 1) local_rank: 0 (pid: 811639) of binary: /n/home03/minghaoli/.conda/envs/torchtitan/bin/python3.13
+Traceback (most recent call last):
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+    return f(*args, **kwargs)
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/run.py", line 1016, in main
+    run(args)
+    ~~~^^^^^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/run.py", line 1007, in run
+    elastic_launch(
+    ~~~~~~~~~~~~~~~
+        config=config,
+        ~~~~~~~~~~~~~~
+        entrypoint=cmd,
+        ~~~~~~~~~~~~~~~
+    )(*cmd_args)
+    ~^^^^^^^^^^^
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/launcher/api.py", line 191, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/n/home03/minghaoli/.conda/envs/torchtitan/lib/python3.13/site-packages/torch/distributed/launcher/api.py", line 371, in launch_agent
+    raise ChildFailedError(
+    ...<2 lines>...
+    )
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+torchtitan.train FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-06-28_21:41:29
+  host      : holygpu8a22104.rc.fas.harvard.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 811640) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-06-28_21:41:29
+  host      : holygpu8a22104.rc.fas.harvard.edu
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 811641) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-28_21:41:29
+  host      : holygpu8a22104.rc.fas.harvard.edu
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 811642) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-28_21:41:29
+  host      : holygpu8a22104.rc.fas.harvard.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 811639) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
