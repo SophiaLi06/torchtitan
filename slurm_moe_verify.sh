@@ -33,5 +33,5 @@ torchrun \
   --parallelism.tensor_parallel_degree 2 \
   --parallelism.expert_parallel_degree 2 \
   --parallelism.context_parallel_degree 1 \
-  --parallelism.data_parallel_shard_degree 1 \
+  --parallelism.data_parallel_shard_degree 2 \
   --training.steps 3
