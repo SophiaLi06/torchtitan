@@ -27,8 +27,8 @@ torchrun \
   --rdzv_backend=c10d \
   --rdzv_endpoint=localhost:29500 \
   -m torchtitan.train \
-  --model.name deepseek_v3 \
-  --model.config deepseek_v3_debugmodel \
+  --module deepseek_v3 \
+  --config deepseek_v3_debugmodel \
   --parallelism.pipeline_parallel_degree 1 \
   --parallelism.tensor_parallel_degree 2 \
   --parallelism.expert_parallel_degree 2 \
