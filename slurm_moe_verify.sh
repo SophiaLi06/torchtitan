@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=16        # give torchrun enough CPUs to spawn 4 workers
 #SBATCH --mem=64G                 # 4 CUDA processes * ~2 GB CPU RAM each + dataset/tokenizer overhead
 #SBATCH --time=00:15:00
-#SBATCH --partition=gpu
+#SBATCH --partition=seas_gpu
 #SBATCH --output=logs/verify_%j.out
 #SBATCH --error=logs/verify_%j.err
 
